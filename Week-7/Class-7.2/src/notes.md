@@ -101,5 +101,25 @@ const doubleCountState = selector({
 });
 ```
 
+### Difference between redux and recoil
+- Recoil is a state management library for React that provides several capabilities that are difficult to achieve with React alone, while being compatible with the newest features of React.
+- Redux is a predictable state container for JavaScript apps. It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.
+- Recoil is more modern and has a better syntax
+- Recoil has atoms and selectors
+- Recoil has a concept of teleporting the data to the component that needs it
+- Recoil has a better performance than Redux
+- Recoil is easier to use than Redux
+- Recoil is more flexible than Redux
+- Recoil is more scalable than Redux
+- Recoil is more maintainable than Redux
+- Recoil is more readable than Redux
+- Recoil is more efficient than Redux
 
+---
+ ### What is a Webhook
+- A webhook is a way for an app to provide other applications with real-time information. A webhook delivers data to other applications as it happens, meaning you get data immediately.
+- A webhook is a way for an app to provide other applications with real-time information
+- A webhook delivers data to other applications as it happens, meaning you get data immediately
+
+---
 

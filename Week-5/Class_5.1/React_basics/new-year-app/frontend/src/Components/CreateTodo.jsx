@@ -33,7 +33,7 @@ export function  CreateTodo() {
             description : description
         }),
         headers: {
-            "content-type" : "application/json"
+            "content-type" : "application/json"//tells the server that the data is in json format
         }
     })
         .then(async function(res) {

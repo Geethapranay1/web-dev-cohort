@@ -2,7 +2,9 @@
 import { createContext } from 'react';
 
 export const CountContext = createContext({
-    count: 0, setCount: () => { }
+    //can have multiple properties
+    count: 0, 
+    setCount: () => { } //empty function
 });
 
 //creatContext is a function that creates a context object that is used to share the data between the components without passing the props down manually at every level of the component tree

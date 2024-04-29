@@ -5,10 +5,10 @@ export const countAtom = atom({
     default: 0, // default value (aka initial value) 
 })
 
-export const evenSelector = selector({
-    key: "evenSelector",
-    get: ({ get }) => {
-        const count = get(countAtom)
+export const evenSelector = selector({ // selector is used to derive the value from the atom
+    key: "evenSelector", // unique ID (with respect to other atoms/selectors)
+    get: ({ get }) => {  // get is a function that is used to get the value of the atom ( { get } is a destructuring syntax) get: ({get}) is 
+        const count = get(countAtom) // get the value of the countAtom
         return count % 2 === 0
     }
 })
