@@ -1,5 +1,6 @@
 
 const mongoose = require("mongoose");
+const { object } = require("zod");
 
 
 mongoose.connect("mongodb+srv://geethapranayofficial:A7lox4fBUVaEpFxW@cluster0.2ns0wr6.mongodb.net/Paytm")
@@ -17,6 +18,39 @@ const user = new mongoose.Schema({
         required: true,
         minLength: 6,   
     },
+    // address: object({
+    //     flatNo: {
+    //         type: String,
+    //         required: true,
+    //         trim: true,
+    //         maxLength: 50,
+    //     },
+    //     street: {
+    //         type: String,
+    //         required: true,
+    //         trim: true,
+    //         maxLength: 50,
+    //     },
+    //     city: {
+    //         type: String,
+    //         required: true,
+    //         trim: true,
+    //         maxLength: 50,
+    //     },
+    //     state: {
+    //         type: String,
+    //         required: true,
+    //         trim: true,
+    //         maxLength: 50,
+    //     },
+    //     pincode: {
+    //         type: String,
+    //         required: true,
+    //         trim: true,
+    //         maxLength: 50,
+    //     },
+    
+    // }),
     firstName: {
         type: String,
         required: true,
